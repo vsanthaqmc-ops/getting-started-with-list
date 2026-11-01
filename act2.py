@@ -1,13 +1,17 @@
-class Vehicle:
+class Employee:
 
-    def __init__(self, max_speed, mileage):
+    def __init__(self):
+        print('Employee created')
 
-        self.max_speed = max_speed
-        self.mileage = mileage
+    def __del__(self):
+        print("destructed called")
 
+    def Create_obj():
+        print('Making Object...')
+        obj = Employee()
+        print('function end...')
+        return obj
 
-modelX = Vehicle(240,18)
-
-print("Model Max Speed:", modelX.max_speed)
-print("Model Mileage:", modelX.mileage)
-        
+    print('Calling Create_obj() function...')
+    obj = Create_obj()
+    print('Program End...')
